@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking - Newan Apartment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Newan Apartment</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="gallery.html" class="text-gray-700 hover:text-blue-600">Gallery</a>
+        <a href="booking.html" class="text-blue-600 font-semibold">Booking</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+        <a href="location.html" class="text-gray-700 hover:text-blue-600">Location</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Booking Form -->
+  <section class="py-16 px-6">
+    <div class="container mx-auto max-w-xl bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Book Your Stay</h2>
+      
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Full Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md">
+        </div>
+
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-md">
+        </div>
+
+        <div>
+          <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
+          <input type="text" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-md">
+        </div>
+
+        <div>
+          <label for="room" class="block mb-2 font-semibold">Room Type</label>
+          <select id="room" name="room" class="w-full px-4 py-2 border rounded-md">
+            <option>Room 1</option>
+            <option>Room 2</option>
+            <option>Room 3</option>
+            <option>Room 4</option>
+            <option>Room 5</option>
+            <option>Room 6</option>
+          </select>
+        </div>
+
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label for="checkin" class="block mb-2 font-semibold">Check-in</label>
+            <input type="date" id="checkin" name="checkin" class="w-full px-4 py-2 border rounded-md">
+          </div>
+          <div class="flex-1">
+            <label for="checkout" class="block mb-2 font-semibold">Check-out</label>
+            <input type="date" id="checkout" name="checkout" class="w-full px-4 py-2 border rounded-md">
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700">
+          Book Now
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 mt-10 border-t">
+    <div class="container mx-auto text-center text-gray-500">
+      &copy; 2025 Newan Apartment. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

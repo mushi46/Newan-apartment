@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ | Newman Apartment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .faq-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .accordion {
+      background-color: #f1f1f1;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.3s;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .accordion.active, .accordion:hover {
+      background-color: #ddd;
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-left: 4px solid #009688;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Frequently Asked Questions</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+      <a href="location.html">Location</a>
+    </nav>
+  </header>
+
+  <main class="faq-section">
+    <h2>Common Questions</h2>
+
+    <button class="accordion">Where is Newman Apartment located?</button>
+    <div class="panel">
+      <p>We are in Mlimwa C, Dodoma, adjacent to Prime Minister's Office.</p>
+    </div>
+
+    <button class="accordion">How do I book an apartment?</button>
+    <div class="panel">
+      <p>Go to our Booking page, fill out the form, and we'll contact you to confirm your stay.</p>
+    </div>
+
+    <button class="accordion">Do you offer short-term and long-term stays?</button>
+    <div class="panel">
+      <p>Yes, we offer both. You can stay for a few days or for months — just let us know.</p>
+    </div>
+
+    <button class="accordion">Is parking available?</button>
+    <div class="panel">
+      <p>Yes, we provide secure and free parking for our guests.</p>
+    </div>
+
+    <button class="accordion">Can I view the apartment before booking?</button>
+    <div class="panel">
+      <p>Absolutely. Contact us to schedule a visit at any time.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Newman Apartment. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const panel = btn.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

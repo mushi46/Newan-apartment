@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Newan Apartment</title>
+
+  <style>
+    /* === CSS inside HTML === */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    .overlay-text {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      color: white;
+      text-shadow: 2px 2px 5px gray;
+    }
+
+    header {
+      background:white(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00ffcc;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    main section {
+      margin-bottom: 2rem;
+    }
+
+    main ul {
+      list-style: square inside;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="media/about-bg.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ✅ Page Content -->
+  <header class="overlay-text">
+    <h1>About Newan Apartment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="overlay-text">
+    <section>
+      <h2>Who We Are</h2>
+      <p>Newan Apartment is a modern, comfortable, and secure place located in the heart of Dodoma. 
+        Our mission is to provide quality accommodation with a touch of class and affordability.</p>
+    </section>
+
+    <section>
+      <h2>What We Value</h2>
+      <ul>
+        <li>Clean and spacious rooms</li>
+        <li>24/7 security</li>
+        <li>Friendly staff</li>
+        <li>Great location</li>
+        <li>with AC condition per each room</li>
+        <li>Free WIFI available</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="overlay-text">
+    <p>&copy; 2025 Newan Apartment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
